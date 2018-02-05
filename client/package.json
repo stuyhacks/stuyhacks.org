@@ -1,7 +1,6 @@
 {
-  "name": "stuyhacks-website",
+  "name": "stuyhacks-client",
   "version": "0.1.0",
-  "main": "server/server.js",
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.26.0",
