@@ -16,12 +16,7 @@ const middleware =
         routerMiddleware(appHistory), //for intercepting navigation actions
       )
     : composeWithDevTools(
-        applyMiddleware(
-          promise(),
-          thunk,
-          logger,
-          routerMiddleware(appHistory),
-        ),
+        applyMiddleware(promise(), thunk, logger, routerMiddleware(appHistory)),
       );
 
 export default createStore(reducer, middleware);

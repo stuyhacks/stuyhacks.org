@@ -21,6 +21,6 @@ class RoutingApp extends Component {
       </Provider>
     );
   }
-};
+}
 
 export default RoutingApp;

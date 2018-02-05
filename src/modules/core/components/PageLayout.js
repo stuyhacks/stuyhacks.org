@@ -15,16 +15,12 @@ class PageLayout extends PureComponent {
 
     return (
       <Grid fluid>
-        <div className={classes.content}>
-          {children}
-        </div>
+        <div className={classes.content}>{children}</div>
       </Grid>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  
-});
+const mapStateToProps = state => ({});
 
 export default connect(mapStateToProps)(injectSheet(styles)(PageLayout));
