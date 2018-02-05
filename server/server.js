@@ -1,85 +1,75 @@
-'use strict'
+"use strict";
 
-require('dotenv').config()
+require("dotenv").config();
 
-const mongoose = require('mongoose');
-const mongooseAuth = require('mongoose-auth');
+const app = require("express")();
+const server = require("http").Server(app);
+const io = require("socket.io")(server);
+const mongoose = require("mongoose");
+const logger = require("morgan");
 
-const { userSchema, messageSchema } = require('./schemas');
+// Start the server
+const port = process.env.PORT || 8080;
+server.listen(port);
+console.log(`Your server is running on port ${port}.`);
 
-const port = process.env.PORT || 8080
-
-
-const mongo = require('mongodb').MongoClient;
-const client = require('socket.io').listen(port).sockets;
-
-console.log(`Listening on port ${port}...`);
-
-let users = [];
-
-mongoose.connect(process.env.MONGO_URL, (err, database) => {
-  if (err) {
-    throw err;
-  }
-
-  console.log('MongoDB connected...');
-
-  // Connect to socket.io
-  client.on('connection', socket => {
-    const db = database.db('stuyhacks');
-    let messages = db.collection('messages');
-
-    // Create function to send status
-    const sendStatus = s => {
-      socket.emit('status', s);
-    };
-
-    // Get chats from mongo collection
-    messages.find().limit(100).sort({_id: 1}).toArray((err, res) => {
-      if (err) {
-        throw err;
-      }
-
-      // Emit the existing messages
-      socket.emit('message output', res);
-    });
-
-    // Handle message events
-    socket.on('message input', data => {
-      const { name, message } = data;
-
-      // check for name and message
-      if (name === '') {
-        // send error status
-        sendStatus('please enter name');
-      } else {
-        // insert message
-        messages.insert({ name, message }, () => {
-          client.emit('message output', [data]);
-
-          // send status object
-          sendStatus({
-            message: 'Message sent',
-            clear: true
-          });
-        });
-      }
-    });
-
-    socket.on('clear messages', () => {
-      // remove all messages from collection
-      messages.remove({}, () => {
-        socket.emit('messages cleared');
-      });
-    })
-
-    socket.on('new user', (data, callback) => {
-      callback(true);
-      socket.username = data.username;
-      users.push(socket.username);
-      updateUsernames();
-    });
-
-    const updateUsernames = () => io.sockets.emit('get users', users);
-  });
+// Database setup
+mongoose.connect(process.env.MONGO_URL, err => {
+  logger.error("MongoDB connection error: " + err);
+  // return reject(err);
+  process.exit(1);
 });
+console.log("Connected to MongoDB.");
+
+/*
+// Set socket.io listeners.
+io.on('connection', socket => {
+  console.log("Socket is connected...")
+  const db = database.db('stuyhacks');
+  let messages = db.collection('messages');
+
+  // Create function to send status
+  const sendStatus = s => {
+    socket.emit('status', s);
+  };
+
+  // Get chats from mongo collection
+  messages.find().limit(100).sort({_id: 1}).toArray((err, res) => {
+    if (err) {
+      throw err;
+    }
+
+    // Emit the existing messages
+    socket.emit('message output', res);
+  });
+
+  // Handle message events
+  socket.on('message input', data => {
+    const { name, message } = data;
+
+    // check for name and message
+    if (name === '') {
+      // send error status
+      sendStatus('please enter name');
+    } else {
+      // insert message
+      messages.insert({ name, message }, () => {
+        io.emit('message output', [data]);
+
+        // send status object
+        sendStatus({
+          message: 'Message sent',
+          clear: true
+        });
+      });
+    }
+  });
+
+  socket.on('clear messages', () => {
+    // remove all messages from collection
+    messages.remove({}, () => {
+      socket.emit('messages cleared');
+    });
+  });
+  
+});*/
