@@ -14,14 +14,9 @@ server.listen(port);
 console.log(`Your server is running on port ${port}.`);
 
 // Database setup
-mongoose.connect(process.env.MONGO_URL, err => {
-  logger.error("MongoDB connection error: " + err);
-  // return reject(err);
-  process.exit(1);
-});
+mongoose.connect(process.env.MONGO_URL);
 console.log("Connected to MongoDB.");
 
-/*
 // Set socket.io listeners.
 io.on('connection', socket => {
   console.log("Socket is connected...")
@@ -72,4 +67,4 @@ io.on('connection', socket => {
     });
   });
   
-});*/
+});
