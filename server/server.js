@@ -7,11 +7,13 @@ const mongooseAuth = require('mongoose-auth');
 
 const { userSchema, messageSchema } = require('./schemas');
 
+const port = process.env.PORT || 8080
+
 
 const mongo = require('mongodb').MongoClient;
-const client = require('socket.io').listen(process.env.PORT).sockets;
+const client = require('socket.io').listen(port).sockets;
 
-console.log(`Listening on port ${process.env.PORT}...`);
+console.log(`Listening on port ${port}...`);
 
 let users = [];
 

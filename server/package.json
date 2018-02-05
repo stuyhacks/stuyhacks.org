@@ -1,0 +1,11 @@
+{
+  "name": "stuyhacks-server",
+  "version": "1.0.0",
+  "description": "Server-side of StuyHacks website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jason Kao",
+  "license": "ISC"
+}
