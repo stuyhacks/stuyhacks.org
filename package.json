@@ -1,10 +1,14 @@
 {
   "name": "stuyhacks-website",
   "version": "0.1.0",
+  "main": "server/server.js",
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "dotenv": "^5.0.0",
     "mongodb": "^3.0.2",
+    "mongoose": "^5.0.3",
+    "mongoose-auth": "0.0.12",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
