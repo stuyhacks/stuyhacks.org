@@ -1,13 +1,21 @@
 'use strict'
 
-const mongo = require('mongodb').MongoClient;
-const client = require('socket.io').listen(3001).sockets;
+require('dotenv').config()
 
-console.log(`Listening on port ${3001}...`);
+const mongoose = require('mongoose');
+const mongooseAuth = require('mongoose-auth');
+
+const { userSchema, messageSchema } = require('./schemas');
+
+
+const mongo = require('mongodb').MongoClient;
+const client = require('socket.io').listen(process.env.PORT).sockets;
+
+console.log(`Listening on port ${process.env.PORT}...`);
 
 let users = [];
 
-mongo.connect('mongodb://127.0.0.1/stuyhacks', (err, database) => {
+mongoose.connect(process.env.MONGO_URL, (err, database) => {
   if (err) {
     throw err;
   }
