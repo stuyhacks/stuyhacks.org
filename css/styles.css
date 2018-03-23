@@ -19,6 +19,11 @@
     font-weight: bold;
 }
 
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -78,8 +83,6 @@ body > section.hero {
     align-items: center;
     font-family: Helvetica Neue;
     font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
 }
 
 .left-nav > div > div {
