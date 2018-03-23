@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Circular Std";
+    src: url('../fonts/CircularStd-Book.otf') format("opentype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url('../fonts/CircularStd-Medium.otf') format("opentype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url('../fonts/CircularStd-Bold.otf') format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,8 +61,9 @@ body > section.hero {
 
 #navbar {
     display: flex;
-    margin-top: 36px;
-    font-family: Helvetica Neue;
+    align-items: center;
+    height: 44px;
+    padding-top: 36px;
     justify-content: center;
 }
 
@@ -52,5 +74,67 @@ body > section.hero {
 }
 
 #navbar > div > div:first-child {
-    
+    display: flex;
+    align-items: center;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.left-nav > div > div {
+    margin-right: 85px;
+}
+
+.right-nav > div > div {
+    margin-left: 85px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#apply-btn {
+	  background-color: rgba(255, 255, 255, 0.8);
+    width: 90px;
+	  height: 35px;
+	  font-family: Circular Std;
+	  font-size: 17px;
+	  font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	  color: #000;
+    position: absolute;
+    right: 90px;
+}
+
+@media (min-width: 1230px) and (max-width: 1300px) {
+    #apply-btn {
+        right: 6%
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1230px) {
+    #apply-btn {
+        right: 4%;
+    }
+}
+
+@media (max-width: 991px) {
+    #apply-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1099px) {
+    .left-nav > div > div {
+        margin-right: 65px;
+    }
+    .right-nav > div > div {
+        margin-left: 65px;
+    }
 }
