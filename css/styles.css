@@ -141,3 +141,14 @@ body > section.hero {
         margin-left: 65px;
     }
 }
+
+#branding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#snake-logo {
+    width: 178px;
+	  height: 285px;
+}
