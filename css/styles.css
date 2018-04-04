@@ -62,6 +62,9 @@ body > section {
 body > section.hero {
     background: #172031;
     color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #navbar {
@@ -148,7 +151,18 @@ body > section.hero {
     justify-content: center;
 }
 
-#snake-logo {
+#snake-logo > img {
     width: 178px;
 	  height: 285px;
+    padding-top: 34px;
+}
+
+.hero-head {
+	  font-family: Helvetica Neue;
+	  font-size: 120px;
+    text-transform: uppercase;
+	  font-weight: bold;
+	  line-height: 1.19;
+	  color: #fff;
+	  -webkit-text-stroke: 4px #404da8;
 }
