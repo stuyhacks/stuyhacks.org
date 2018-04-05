@@ -149,12 +149,12 @@ body > section.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 #snake-logo > img {
-    width: 178px;
-	  height: 285px;
-    padding-top: 34px;
+	  height: 310px;
+    padding-top: 18px;
 }
 
 .hero-head {
@@ -162,7 +162,48 @@ body > section.hero {
 	  font-size: 120px;
     text-transform: uppercase;
 	  font-weight: bold;
-	  line-height: 1.19;
+	  line-height: 1;
 	  color: #fff;
-	  -webkit-text-stroke: 4px #404da8;
+	  -webkit-text-stroke: 5px #404da8;
+    margin-bottom: 38px;
+}
+
+.subtitle {
+    font-family: Helvetica Neue;
+	  font-size: 26px;
+	  font-weight: bold;
+    margin-bottom: 38px;
+}
+
+#cta {
+	  font-family: HelveticaNeue;
+	  font-size: 22px;
+    width: 96px;
+    margin: 0 auto;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 3px;
+}
+
+.row-halved {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    position: absolute;
+    bottom: 30px;
+}
+
+#footnote {
+    font-family: Helvetica Neue;
+	  font-size: 14px;
+	  font-weight: 500;
+}
+
+#footnote #externals > a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#footnote #socials > a {
+    display: inline-block;
+    margin-left: 10px;
 }
