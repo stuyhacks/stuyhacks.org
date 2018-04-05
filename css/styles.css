@@ -242,3 +242,63 @@ body > section.about {
 .split > .description p:not(:first-child) {
     margin-top: 60px;
 }
+
+body > section.join-us {
+    color: #fff;
+    background-color: #47a37d;
+}
+
+.join-us > h1 {
+    text-align: center;
+    font-family: Helvetica Neue;
+    padding-top: 68px;
+	  font-size: 70px;
+	  font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.cta {
+    font-family: Circular Std;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 2px;
+    padding: 11px 30px;
+    border: 3px solid #ee6;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background: #ee6;
+}
+
+.four-by-four {
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.four-by-four > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.four-by-four > div > div {
+    margin-bottom: 2.5em;
+}
+
+.four-by-four .title {
+    font-family: Circular Std;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+.four-by-four .description {
+    font-family: Circular Std;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
