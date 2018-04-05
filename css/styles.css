@@ -207,3 +207,38 @@ body > section.hero {
     display: inline-block;
     margin-left: 10px;
 }
+
+body > section.about {
+    background-color: #f8f8fa;
+	  color: #222244;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 9%;
+}
+
+.split > .focus {
+    flex-basis: 45%;
+    font-family: Helvetica Neue;
+	  font-size: 70px;
+	  font-weight: bold;
+}
+
+.split > .description {
+    font-family: Avenir;
+	  font-size: 32px;
+	  font-weight: 500;
+	  line-height: 1.25;
+    flex-basis: 48%;
+}
+
+.split > .description p:not(:first-child) {
+    margin-top: 60px;
+}
