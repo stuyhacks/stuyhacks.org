@@ -168,6 +168,26 @@ body > section.hero {
     margin-bottom: 38px;
 }
 
+@media (max-width: 768px) {
+    .hero-head {
+        font-size: 15vw;
+	      -webkit-text-stroke: 3px #404da8;
+    }
+    .masthead {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .small-split {
+        display: block;
+    }
+    .hero-head {
+        font-size: 100px;
+        -webkit-text-stroke: 5px #404da8
+    }
+}
+
 .subtitle {
     font-family: Helvetica Neue;
 	  font-size: 26px;
