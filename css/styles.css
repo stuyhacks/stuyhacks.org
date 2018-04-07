@@ -59,6 +59,13 @@ body > section {
     height: 100vh;
 }
 
+@media (max-width: 500px) {
+    body > section {
+        height: auto;
+        padding-bottom: 5vh;
+    }
+}
+
 body > section.hero {
     background: #172031;
     color: #fff;
@@ -225,6 +232,12 @@ body > section.hero {
     bottom: 30px;
 }
 
+@media (max-width: 500px) {
+    .row-halved {
+        display: none;
+    }
+}
+
 #footnote {
     font-family: Helvetica Neue;
 	  font-size: 14px;
@@ -276,6 +289,38 @@ body > section.about {
     margin-top: 60px;
 }
 
+@media (max-width: 1120px) {
+    .split > .focus {
+        font-size: 5vw;
+    }
+
+    .split > .description {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .split > .focus {
+        font-size: 50px;
+    }
+
+    .split > .description {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    body > section.about {
+        height: auto;
+        padding: 8vh 0;
+    }
+}
+
 body > section.join-us {
     color: #fff;
     background-color: #47a37d;
@@ -316,6 +361,7 @@ body > section.join-us {
 .four-by-four > div {
     display: flex;
     flex-direction: column;
+    flex-basis: 40%;
 }
 
 .four-by-four > div > div {
@@ -326,13 +372,13 @@ body > section.join-us {
     font-family: Circular Std;
     font-weight: 500;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .four-by-four .description {
     font-family: Circular Std;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.5;
     margin-bottom: 2em;
 }
