@@ -176,6 +176,12 @@ body > section.hero {
     .masthead {
         display: none;
     }
+    #navbar .left-nav > div > .nav-item:last-child {
+        margin-right: 32px;
+    }
+    #navbar .right-nav > div > .nav-item:first-child {
+        margin-left: 32px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -183,8 +189,15 @@ body > section.hero {
         display: block;
     }
     .hero-head {
-        font-size: 100px;
-        -webkit-text-stroke: 5px #404da8
+        font-size: 90px;
+        -webkit-text-stroke: 3.5px #404da8
+    }
+    #navbar {
+        display: none;
+    }
+    #snake-logo > img {
+        height: 36vh;
+        padding-top: 5vh;
     }
 }
 
@@ -315,10 +328,146 @@ body > section.join-us {
     margin-bottom: 20px;
     font-size: 1.5em;
 }
+
 .four-by-four .description {
     font-family: Circular Std;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 2em;
+}
+
+body > section.footer {
+    color: #fff;
+    font-family: Helvetica Neue;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.majority-split {
+    padding-top: 20vh;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.majority-split > div:first-child {
+    flex-basis: 45%;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#footer-register-btn {
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    display: block;
+    height: 50px;
+    padding: 0px 25px 2px;
+    background-color: #fff;
+    transition: opacity 200ms ease;
+    font-size: 11px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #000;
+    width: 100px;
+}
+
+#footer-register-btn:hover {
+    background-color: #38d996;
+    cursor: pointer;
+}
+
+.majority-split > div:last-child {
+    flex-basis: 10%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.share-tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorful-links {
+    display: flex;
+    height: 40vh;
+    font-weight: 700;
+}
+
+.colorful-links > div {
+    flex-basis: 16.6666%;
+    min-height: 250px;
+    min-width: 0%;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorful-links > div > i {
+    visibility: hidden;
+}
+
+.colorful-links > div:hover {
+    background-color: #000 !important;
+    cursor: pointer;
+}
+
+.colorful-links > div:hover i {
+    visibility: visible;
+    color: #fff !important;
+}
+
+#color-about {
+    background-color: #ffab9d;
+}
+
+#color-learn {
+    background-color: #ff6382;
+}
+
+#color-logistics {
+    background-color: #d46bc8;
+}
+
+#color-faq {
+    background-color: #9085da;
+}
+
+#color-sponsors {
+    background-color: #4fadff;
+}
+
+#color-apply {
+    background-color: #38d996;
+}
+
+#color-about:hover {
+    color: #ffab9d;
+}
+
+#color-learn:hover {
+    color: #ff6382;
+}
+
+#color-logistics:hover {
+    color: #d46bc8;
+}
+
+#color-faq:hover {
+    color: #9085da;
+}
+
+#color-sponsors:hover {
+    color: #4fadff;
+}
+
+#color-apply:hover {
+    color: #38d996;
 }
