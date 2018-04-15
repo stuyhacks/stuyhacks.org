@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="./css/styles.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-grid.min.css" crossorigin="anonymous">
         <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -21,10 +25,10 @@
                 <div class="left-nav">
                     <div>
                         <div class="nav-item">
-                            <a href="#about">About</a>
+                            <a href="#about" id="about-href">About</a>
                         </div>
                         <div class="nav-item">
-                            <a href="#learn">Learn</a>
+                            <a href="#join-us" id="join-us-href">Join Us</a>
                         </div>
                     </div>
                 </div>
@@ -34,10 +38,10 @@
                 <div class="right-nav">
                     <div>
                         <div class="nav-item">
-                            <a href="#logistics">Logistics</a>
+                            <a href="#faq" id="faq-href">Logistics</a>
                         </div>
                         <div class="nav-item">
-                            <a href="#sponsors">Sponsors</a>
+                            <a href="#sponsors" id="sponsors-href">Sponsors</a>
                         </div>
                     </div>
                     <div id="apply-btn">
@@ -87,7 +91,7 @@
 
         </section>
 
-        <section class="about">
+        <section class="about" name="about">
 
             <div class="split">
                 <div class="focus">
@@ -108,7 +112,7 @@
 
         </section>
 
-        <section class="join-us">
+        <section class="join-us" name="join-us">
 
             <h1>Join Us</h1>
 
@@ -155,13 +159,15 @@
 
         </section>
 
-        <section class="faq">
+        <section class="faq" name="faq">
+
+            <h1>FAQ</h1>
 
             <div class="twin-towers container">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <p class="question"What is a hackathon?</p>
-	                      <p class="answer">It’s a grand gathering of people to make their ideas come to life. Think out of the box, try new technologies, ask questions, make mistakes, discover a new language, and have fun! Read more on <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601">Medium.</p>
+                        <p class="question">What is a hackathon?</p>
+	                      <p class="answer">It’s a grand gathering of people to make their ideas come to life. Think out of the box, try new technologies, ask questions, make mistakes, discover a new language, and have fun! Read more on <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601">Medium.</a></p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <p class="question">What if I am a beginner?</p>
@@ -199,6 +205,61 @@
             </div>
 
         </section>
+
+        <section class="sponsors" name="sponsors">
+
+            <h1>Sponsors</h1>
+
+            <div id="platinum">
+                <h3>Platinum</h3>
+                <div>
+                    <a href="https://facebook.com">
+                        <img src="./img/sponsors/facebook.png"/>
+                    </a>
+                    <a href="https://www.paloaltonetworks.com/">
+                        <img src="./img/sponsors/paloalto.png"/>
+                    </a>
+                </div>
+            </div>
+
+            <div id="silver">
+                <h3>Silver</h3>
+            </div>
+
+            <div id="bronze">
+                <h3>Bronze</h3>
+            </div>
+
+            <div class="footer">
+                <p><span class="grey">Contact Us:</span> <a href="mailto:hello@stuyhacks.com">hello@stuyhacks.com</a></p>
+                <p><span class="grey">Designed by the StuyHacks Design Department &mdash; </span><a href="https://github.com/stuyhacks">https://github.com/stuyhacks</a></p>
+                <p><span class="grey">&#9400; </span>StuyHacks 2018</p>
+            </div>
+
+        </section>
+
+        <script>
+            $("#about-href").click(function() {
+            $('html, body').animate({
+            scrollTop: $("section.about").offset().top
+            }, 500);
+            });
+            $("#join-us-href").click(function() {
+            $('html, body').animate({
+            scrollTop: $("section.join-us").offset().top
+            }, 500);
+            });
+            $("#faq-href").click(function() {
+            $('html, body').animate({
+            scrollTop: $("section.faq").offset().top
+            }, 500);
+            });
+            $("#sponsors-href").click(function() {
+            $('html, body').animate({
+            scrollTop: $("section.sponsors").offset().top
+            }, 500);
+            });
+        </script>
 
     </body>
 

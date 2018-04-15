@@ -333,7 +333,7 @@ body > section.join-us {
     background-color: #47a37d;
 }
 
-.join-us > h1 {
+body > section  > h1 {
     text-align: center;
     font-family: Helvetica Neue;
     padding-top: 68px;
@@ -546,4 +546,103 @@ body > section.footer {
         width: auto !important;
         min-height: 250px;
     }
+}
+
+body > section.faq {
+    background: #172031;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    font-family: Circular Std;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+.question {
+    font-weight: 700;
+}
+
+.answer {
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .twin-towers {
+        width: 760px !important;
+        margin: 0 auto;
+    }
+}
+
+.twin-towers > .row > div {
+    margin-bottom: 30px;
+    padding: 40px 30px;
+}
+
+.footer {
+    margin-top: 100px;
+    color: #888;
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer .grey {
+    color: #172031;
+}
+
+body > section.sponsors {
+    background: rgb(226, 225, 235);
+    color: #172031;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    font-family: Circular Std;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.sponsors > div {
+    margin-bottom: 30px;
+}
+
+.sponsors h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Helvetica Neue;
+}
+
+.sponsors > div > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsors > div > div > a {
+    display: block;
+    margin: 0 20px;
+}
+
+.sponsors > div#platinum > div > a > img {
+    height: 150px;
+}
+
+#platinum {
+    color: #bbc;
+}
+
+#silver {
+    color: #888;
+}
+
+#bronze {
+    color: #da8;
 }
