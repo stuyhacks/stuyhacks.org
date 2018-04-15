@@ -49,6 +49,10 @@ time, mark, audio, video, img {
     padding: 0 !important;
 }
 
+.row {
+    margin: 0 !important;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -81,7 +85,6 @@ body > section.hero {
 #navbar {
     display: flex;
     align-items: center;
-    height: 44px;
     padding-top: 36px;
     justify-content: center;
 }
@@ -164,7 +167,7 @@ body > section.hero {
 }
 
 #snake-logo > img {
-	  height: 310px;
+	  height: 320px;
     padding-top: 18px;
 }
 
