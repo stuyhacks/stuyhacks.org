@@ -67,7 +67,7 @@
                 <h1 class="hero-head">Stuy<span class="small-split">Hacks</h1>
                     <p class="subtitle">May 19 - May 20</p>
                     <p id="cta">
-                        <a href="#">More Info</a>
+                        <a href="#moreinfo" id="moreinfo-href"> More Info</a>
                     </p>
             </div>
 
@@ -271,6 +271,11 @@
          $("#sponsors-href").click(function() {
              $('html, body').animate({
                  scrollTop: $("section.sponsors").offset().top
+             }, 500);
+         });
+         $("#moreinfo-href").click(function() {
+             $('html, body').animate({
+                 scrollTop: $("section.about").offset().top
              }, 500);
          });
         </script>
