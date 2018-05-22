@@ -198,6 +198,12 @@ body > section.hero {
     }
 }
 
+.bold {
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block;
+}
+
 @media (max-width: 500px) {
     .small-split {
         display: block;
@@ -217,8 +223,7 @@ body > section.hero {
 
 .subtitle {
     font-family: Helvetica Neue;
-	  font-size: 26px;
-	  font-weight: bold;
+	  font-size: 22px;
     margin-bottom: 38px;
 }
 
