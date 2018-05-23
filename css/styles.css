@@ -45,6 +45,10 @@ time, mark, audio, video, img {
     vertical-align: baseline;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container-fluid {
     padding: 0 !important;
 }
@@ -98,7 +102,7 @@ body > section.hero {
 #navbar > div > div:first-child {
     display: flex;
     align-items: center;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
 }
 
@@ -166,20 +170,13 @@ body > section.hero {
     text-align: center;
 }
 
-#snake-logo > img {
-	  height: 320px;
-    padding-top: 18px;
+#snake-logo {
+    margin-bottom: 18px;
 }
 
-.hero-head {
-	  font-family: Helvetica Neue;
-	  font-size: 120px;
-    text-transform: uppercase;
-	  font-weight: bold;
-	  line-height: 1;
-	  color: #fff;
-	  -webkit-text-stroke: 5px #404da8;
-    margin-bottom: 38px;
+#snake-logo > img {
+	  height: 510px;
+    padding-top: 18px;
 }
 
 @media (max-width: 768px) {
@@ -187,7 +184,7 @@ body > section.hero {
         font-size: 15vw;
 	      -webkit-text-stroke: 3px #404da8;
     }
-    .masthead {
+    #navbar .left-nav, #navbar .right-nav {
         display: none;
     }
     #navbar .left-nav > div > .nav-item:last-child {
@@ -200,7 +197,7 @@ body > section.hero {
 
 .bold {
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
     display: block;
 }
 
@@ -212,25 +209,21 @@ body > section.hero {
         font-size: 90px;
         -webkit-text-stroke: 3.5px #404da8
     }
-    #navbar {
-        display: none;
-    }
     #snake-logo > img {
-        height: 36vh;
+        height: 71vh;
         padding-top: 5vh;
     }
 }
 
 .subtitle {
-    font-family: Helvetica Neue;
-	  font-size: 22px;
-    margin-bottom: 38px;
+    font-family: Helvetica Neue, Helvetica;
+	  font-size: 21px;
+    margin-bottom: 20px;
 }
 
 #cta {
-	  font-family: HelveticaNeue;
-	  font-size: 22px;
-    width: 96px;
+	  font-family: Helvetica Neue, Helvetica;
+	  font-size: 18px;
     margin: 0 auto;
     border-bottom: 3px solid #fff;
     padding-bottom: 3px;
@@ -251,7 +244,7 @@ body > section.hero {
 }
 
 #footnote {
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Helvetica;
 	  font-size: 14px;
 	  font-weight: 500;
 }
@@ -284,7 +277,7 @@ body > section.about {
 
 .split > .focus {
     flex-basis: 45%;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Helvetica;
 	  font-size: 70px;
 	  font-weight: bold;
 }
@@ -340,7 +333,7 @@ body > section.join-us {
 
 body > section  > h1 {
     text-align: center;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Helvetica;
     padding-top: 68px;
 	  font-size: 70px;
 	  font-weight: bold;
@@ -414,7 +407,7 @@ body > section  > h1 {
 
 body > section.footer {
     color: #fff;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Helvetica;
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -624,7 +617,7 @@ body > section.sponsors {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Helvetica;
 }
 
 .sponsors > div > div {
@@ -651,4 +644,10 @@ body > section.sponsors {
 
 #bronze {
     color: #da8;
+}
+
+@media (max-width: 680px) {
+    .focus, .description {
+        text-align: center;
+    }
 }
