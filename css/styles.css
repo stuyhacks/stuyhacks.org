@@ -19,6 +19,29 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('../fonts/Helvetica Neu Bold.ttf') format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('../fonts/HelveticaNeueLt.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirNext";
+    src: url('../fonts/AvenirNext-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirNext";
+    src: url('../fonts/AvenirNext-Italic.ttf') format("truetype");
+    font-style: italic;
+}
+
+
 * {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
