@@ -646,11 +646,12 @@ body > section.sponsors {
 .sponsors > div > div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sponsors > div > div > a {
     display: block;
-    margin: 0 20px;
+    margin: 10px 20px;
 }
 
 .sponsors > div#platinum > div > a > img {
