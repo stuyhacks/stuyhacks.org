@@ -647,6 +647,7 @@ body > section.sponsors {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .sponsors > div > div > a {
@@ -656,6 +657,11 @@ body > section.sponsors {
 
 .sponsors > div#platinum > div > a > img {
     height: 150px;
+}
+
+.sponsors > div#bronze > div > a > img {
+    max-height: 120px;
+    max-width: 200px;
 }
 
 #platinum {
