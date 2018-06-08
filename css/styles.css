@@ -47,6 +47,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -662,6 +666,10 @@ body > section.sponsors {
 .sponsors > div#bronze > div > a > img {
     max-height: 120px;
     max-width: 200px;
+}
+
+.sponsors img {
+    max-width: 100vw;
 }
 
 #platinum {
