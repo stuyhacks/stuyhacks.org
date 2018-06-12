@@ -698,6 +698,11 @@ body > section.sponsors {
     height: 150px;
 }
 
+.sponsors > div#gold > div > a > img {
+    max-height: 150px;
+    max-width: 450px;
+}
+
 .sponsors > div#bronze > div > a > img {
     max-height: 120px;
     max-width: 200px;
