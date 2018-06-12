@@ -573,6 +573,29 @@ body > section.footer {
     }
 }
 
+.schedule-table {
+    text-align: left; 
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.schedule-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table th {
+    border-width: thin;
+    border-color: white;
+}
+
+
+.schedule-table th {
+    padding: 5px;
+}
+
 body > section.faq {
     background: #172031;
     color: #fff;
@@ -586,6 +609,18 @@ body > section.faq {
     padding-bottom: 40px;
 }
 
+body > section.schedule {
+    background: #800000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    font-family: Circular Std;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
 .question {
     font-weight: 700;
 }
