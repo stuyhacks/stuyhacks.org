@@ -190,6 +190,10 @@ body > section.hero {
     }
 }
 
+#feedback-link {
+    text-decoration: underline;
+}
+
 #branding {
     display: flex;
     flex-direction: column;
