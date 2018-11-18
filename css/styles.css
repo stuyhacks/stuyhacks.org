@@ -190,9 +190,9 @@ body > section.hero {
     }
 }
 
-#feedback-link {
+/* #feedback-link {
     text-decoration: underline;
-}
+} */
 
 #branding {
     display: flex;
@@ -228,7 +228,7 @@ body > section.hero {
 
 .bold {
     font-weight: bold;
-    margin-bottom: 2px;
+    margin-bottom: 12px;
     display: block;
 }
 
@@ -249,7 +249,7 @@ body > section.hero {
 .subtitle {
     font-family: Helvetica Neue, Helvetica;
 	  font-size: 21px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 #cta {
@@ -578,7 +578,7 @@ body > section.footer {
 }
 
 .schedule-table {
-    text-align: left; 
+    text-align: left;
     font-size: 18px;
     position: relative;
     width: 100%;
