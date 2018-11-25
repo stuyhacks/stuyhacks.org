@@ -387,6 +387,11 @@ body > section  > h1 {
     background: #ee6;
 }
 
+#register:hover {
+    color: #172031;
+}
+
+
 .four-by-four {
     display: flex;
     margin: 0 auto;
