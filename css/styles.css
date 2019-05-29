@@ -209,6 +209,7 @@ body > section.hero {
 #snake-logo > img {
 	  height: 510px;
     padding-top: 18px;
+    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -710,7 +711,8 @@ body > section.sponsors {
 }
 
 .sponsors > div#platinum > div > a > img {
-    height: 150px;
+  max-height: 120px;
+  max-width: 200px;
 }
 
 .sponsors > div#gold > div > a > img {
