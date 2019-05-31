@@ -725,6 +725,12 @@ body > section.sponsors {
     max-width: 200px;
 }
 
+.sponsors > div#misc > div > a > img {
+    max-height: 120px;
+    max-width: 200px;
+
+}
+
 .sponsors img {
     max-width: 100vw;
 }
