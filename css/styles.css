@@ -390,6 +390,25 @@ body > section  > h1 {
     background: #ee6;
 }
 
+#slack {
+    border: 3px solid #67ee70;
+}
+
+#slack:hover {
+    background-color: #67ee70;
+    color: rgb(78, 37, 36);
+}
+
+#help {
+    border: 3px solid rgb(114, 208, 233);
+}
+
+#help:hover {
+    background-color: rgb(114, 208, 233);
+    color: rgb(78, 37, 36);
+}
+
+
 #register:hover {
     color: #172031;
 }
@@ -717,7 +736,7 @@ body > section.sponsors {
 
 .sponsors > div#gold > div > a > img {
   max-height: 120px;
-  max-width: 200px; 
+  max-width: 200px;
 }
 
 .sponsors > div#bronze > div > a > img {
