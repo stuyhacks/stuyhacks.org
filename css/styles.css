@@ -402,7 +402,7 @@ body > section  > h1 {
 
 #slack:hover {
     background-color: #67ee70;
-    color: rgb(78, 37, 36);
+    color: #172031;
 }
 
 #help {
@@ -411,7 +411,7 @@ body > section  > h1 {
 
 #help:hover {
     background-color: rgb(114, 208, 233);
-    color: rgb(78, 37, 36);
+    color: #172031;
 }
 
 
