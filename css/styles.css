@@ -134,6 +134,12 @@ body > section.hero {
     font-size: 18px;
 }
 
+/* #stuyhacksviii {
+    outline: 5px dotted green;
+    height: 150px;
+    width: 300px;
+} */
+
 .left-nav > div > div {
     margin-right: 85px;
 }
