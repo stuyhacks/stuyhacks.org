@@ -106,7 +106,7 @@ body > section {
 }
 
 body > section.hero {
-    background: #172031;
+    background: black;
     color: #fff;
     display: flex;
     align-items: center;
@@ -132,6 +132,7 @@ body > section.hero {
     align-items: center;
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
+    color:tomato;
 }
 
 /* #stuyhacksviii {
@@ -155,7 +156,7 @@ body > section.hero {
 }
 
 #apply-btn {
-	  background-color: rgba(255, 255, 255, 0.8);
+	  background-color: rgba(255, 255, 255);
     width: 90px;
 	  height: 35px;
 	  font-family: Circular Std;
@@ -264,7 +265,7 @@ body > section.hero {
 	  font-family: Helvetica Neue, Helvetica;
 	  font-size: 18px;
     margin: 0 auto;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid tomato;
     padding-bottom: 15px;
 }
 
@@ -274,6 +275,7 @@ body > section.hero {
     width: 87%;
     position: absolute;
     bottom: 30px;
+    color:tomato;
 }
 
 @media (max-width: 500px) {
@@ -367,10 +369,12 @@ body > section.about {
 
 body > section.join-us {
     color: #fff;
-    background-color: #47a37d;
+    background-color: tomato;
     height: 115vh;
 }
-
+body > section.join-us > h1 {
+    color:black;
+}
 body > section  > h1 {
     text-align: center;
     font-family: Helvetica Neue, Helvetica;
@@ -388,30 +392,34 @@ body > section  > h1 {
     font-weight: 700;
     border-radius: 2px;
     padding: 11px 30px;
-    border: 3px solid #ee6;
+    border: 3px solid black;
+    color:black;
 }
 
 .cta:hover {
     cursor: pointer;
-    background: #ee6;
+    background: black;
+    color: white;
 }
 
 #slack {
-    border: 3px solid #67ee70;
+    border: 3px solid white;
+    color:white;
 }
 
 #slack:hover {
-    background-color: #67ee70;
-    color: #172031;
+    background-color: white;
+    color: black;
 }
 
 #help {
-    border: 3px solid rgb(114, 208, 233);
+    border: 3px solid white;
+    color:white;
 }
 
 #help:hover {
-    background-color: rgb(114, 208, 233);
-    color: #172031;
+    background-color: white;
+    color: black;
 }
 
 
@@ -429,6 +437,7 @@ body > section  > h1 {
     margin: 0 auto;
     width: 800px;
     justify-content: space-between;
+    color:black;
 }
 
 .four-by-four > div {
@@ -446,6 +455,7 @@ body > section  > h1 {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 1.7em;
+    color:black;
 }
 
 @media (max-width: 868px) {
@@ -457,6 +467,7 @@ body > section  > h1 {
 @media (max-width: 620px) {
     body > section.join-us {
         height: auto;
+        color:black;
     }
 
     .four-by-four {
@@ -471,6 +482,7 @@ body > section  > h1 {
     font-size: 1.15rem;
     line-height: 1.5;
     margin-bottom: 2em;
+    color:black;
 }
 
 body > section.footer {
