@@ -106,7 +106,7 @@ body > section {
 }
 
 body > section.hero {
-    background: #172031;
+    background: black;
     color: #fff;
     display: flex;
     align-items: center;
@@ -132,13 +132,10 @@ body > section.hero {
     align-items: center;
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
+    font-weight: bold;
+    color:tomato;
 }
 
-/* #stuyhacksviii {
-    outline: 5px dotted green;
-    height: 150px;
-    width: 300px;
-} */
 
 .left-nav > div > div {
     margin-right: 85px;
@@ -155,17 +152,17 @@ body > section.hero {
 }
 
 #apply-btn {
-	  background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255);
     width: 90px;
-	  height: 35px;
-	  font-family: Circular Std;
-	  font-size: 17px;
-	  font-weight: bold;
+    height: 35px;
+    font-family: Circular Std;
+    font-size: 17px;
+    font-weight: bold;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-	  color: #000;
+    color: #000;
     position: absolute;
     right: 90px;
 }
@@ -197,9 +194,6 @@ body > section.hero {
     }
 }
 
-/* #feedback-link {
-    text-decoration: underline;
-} */
 
 #branding {
     display: flex;
@@ -213,7 +207,7 @@ body > section.hero {
 }
 
 #snake-logo > img {
-	  height: 510px;
+    height: 510px;
     padding-top: 18px;
     position: relative;
 }
@@ -221,7 +215,7 @@ body > section.hero {
 @media (max-width: 768px) {
     .hero-head {
         font-size: 15vw;
-	      -webkit-text-stroke: 3px #404da8;
+        -webkit-text-stroke: 3px #404da8;
     }
     #navbar .left-nav, #navbar .right-nav {
         display: none;
@@ -256,15 +250,16 @@ body > section.hero {
 
 .subtitle {
     font-family: Helvetica Neue, Helvetica;
-	  font-size: 21px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
 #cta {
-	  font-family: Helvetica Neue, Helvetica;
-	  font-size: 18px;
+    font-family: Helvetica Neue, Helvetica;
+    font-size: 18px;
     margin: 0 auto;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid tomato;
+    font-weight: bold;
     padding-bottom: 15px;
 }
 
@@ -274,6 +269,7 @@ body > section.hero {
     width: 87%;
     position: absolute;
     bottom: 30px;
+    color:tomato;
 }
 
 @media (max-width: 500px) {
@@ -284,8 +280,8 @@ body > section.hero {
 
 #footnote {
     font-family: Helvetica Neue, Helvetica;
-	  font-size: 14px;
-	  font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #footnote #externals > a {
@@ -300,7 +296,7 @@ body > section.hero {
 
 body > section.about {
     background-color: #f8f8fa;
-	  color: #222244;
+    color: #222244;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -317,15 +313,15 @@ body > section.about {
 .split > .focus {
     flex-basis: 45%;
     font-family: Helvetica Neue, Helvetica;
-	  font-size: 70px;
-	  font-weight: bold;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 .split > .description {
     font-family: Avenir;
-	  font-size: 32px;
-	  font-weight: 500;
-	  line-height: 1.25;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
     flex-basis: 48%;
 }
 
@@ -367,16 +363,18 @@ body > section.about {
 
 body > section.join-us {
     color: #fff;
-    background-color: #47a37d;
+    background-color: tomato;
     height: 115vh;
 }
-
+body > section.join-us > h1 {
+    color:black;
+}
 body > section  > h1 {
     text-align: center;
     font-family: Helvetica Neue, Helvetica;
     padding-top: 68px;
-	  font-size: 70px;
-	  font-weight: bold;
+    font-size: 70px;
+    font-weight: bold;
     margin-bottom: 30px;
 }
 
@@ -388,30 +386,34 @@ body > section  > h1 {
     font-weight: 700;
     border-radius: 2px;
     padding: 11px 30px;
-    border: 3px solid #ee6;
+    border: 3px solid black;
+    color:black;
 }
 
 .cta:hover {
     cursor: pointer;
-    background: #ee6;
+    background: black;
+    color: white;
 }
 
 #slack {
-    border: 3px solid #67ee70;
+    border: 3px solid white;
+    color:white;
 }
 
 #slack:hover {
-    background-color: #67ee70;
-    color: #172031;
+    background-color: white;
+    color: black;
 }
 
 #help {
-    border: 3px solid rgb(114, 208, 233);
+    border: 3px solid white;
+    color:white;
 }
 
 #help:hover {
-    background-color: rgb(114, 208, 233);
-    color: #172031;
+    background-color: white;
+    color: black;
 }
 
 
@@ -429,6 +431,7 @@ body > section  > h1 {
     margin: 0 auto;
     width: 800px;
     justify-content: space-between;
+    color:black;
 }
 
 .four-by-four > div {
@@ -446,6 +449,7 @@ body > section  > h1 {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 1.7em;
+    color:black;
 }
 
 @media (max-width: 868px) {
@@ -457,6 +461,7 @@ body > section  > h1 {
 @media (max-width: 620px) {
     body > section.join-us {
         height: auto;
+        color:black;
     }
 
     .four-by-four {
@@ -471,6 +476,7 @@ body > section  > h1 {
     font-size: 1.15rem;
     line-height: 1.5;
     margin-bottom: 2em;
+    color:black;
 }
 
 body > section.footer {
@@ -736,13 +742,13 @@ body > section.sponsors {
 }
 
 .sponsors > div#platinum > div > a > img {
-  max-height: 120px;
-  max-width: 200px;
+    max-height: 120px;
+    max-width: 200px;
 }
 
 .sponsors > div#gold > div > a > img {
-  max-height: 120px;
-  max-width: 200px;
+    max-height: 120px;
+    max-width: 200px;
 }
 
 .sponsors > div#bronze > div > a > img {
