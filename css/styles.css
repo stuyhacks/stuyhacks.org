@@ -633,11 +633,14 @@ body > section.footer {
     border-bottom: 1px solid #ddd;
 }
 
+.schedule-table tr.no-bottom-border {
+    border-bottom: none;
+}
+
 .schedule-table th {
     border-width: thin;
     border-color: white;
 }
-
 
 .schedule-table th {
     padding: 5px;
