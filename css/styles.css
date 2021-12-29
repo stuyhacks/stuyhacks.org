@@ -134,7 +134,7 @@ body > section.hero {
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
     font-weight: bold;
-    color:tomato;
+    color:#FF62A0;
 }
 
 
@@ -259,7 +259,7 @@ body > section.hero {
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
     margin: 0 auto;
-    border-bottom: 3px solid tomato;
+    border-bottom: 3px solid #FF62A0;
     font-weight: bold;
     padding-bottom: 15px;
 }
@@ -270,7 +270,7 @@ body > section.hero {
     width: 87%;
     position: absolute;
     bottom: 30px;
-    color:tomato;
+    color:#FF62A0;
 }
 
 @media (max-width: 500px) {
@@ -364,7 +364,7 @@ body > section.about {
 
 body > section.join-us {
     color: #fff;
-    background-color: tomato;
+    background-color: #FF62A0;
     height: 115vh;
 }
 body > section.join-us > h1 {
@@ -523,7 +523,7 @@ body > section.footer {
 }
 
 #footer-register-btn:hover {
-    background-color: #38d996;
+    background-color: #d938be;
     cursor: pointer;
 }
 
@@ -561,11 +561,11 @@ body > section.footer {
 }
 
 #color-about {
-    background-color: #ffab9d;
+    background-color: #ff9de3;
 }
 
 #color-learn {
-    background-color: #ff6382;
+    background-color: #ff63ef;
 }
 
 #color-logistics {
