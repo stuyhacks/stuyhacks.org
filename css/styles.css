@@ -522,7 +522,7 @@ body > section.footer {
 }
 
 #footer-register-btn:hover {
-    background-color: #38d996;
+    background-color: #d938be;
     cursor: pointer;
 }
 
@@ -560,11 +560,11 @@ body > section.footer {
 }
 
 #color-about {
-    background-color: #ffab9d;
+    background-color: #ff9de3;
 }
 
 #color-learn {
-    background-color: #ff6382;
+    background-color: #ff63ef;
 }
 
 #color-logistics {
