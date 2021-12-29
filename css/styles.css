@@ -134,7 +134,7 @@ body > section.hero {
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
     font-weight: bold;
-    color:#FF62A0;
+    color:#eb50d9;
 }
 
 
@@ -259,7 +259,7 @@ body > section.hero {
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
     margin: 0 auto;
-    border-bottom: 3px solid #FF62A0;
+    border-bottom: 3px solid #eb50d9;
     font-weight: bold;
     padding-bottom: 15px;
 }
@@ -270,7 +270,7 @@ body > section.hero {
     width: 87%;
     position: absolute;
     bottom: 30px;
-    color:#FF62A0;
+    color:#eb50d9;
 }
 
 @media (max-width: 500px) {
