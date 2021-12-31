@@ -444,6 +444,8 @@ body > section  > h1 {
 
 .four-by-four > div > div {
     margin-bottom: 2.5em;
+    flex-direction: column;
+    flex-basis: 40%;
 }
 
 .four-by-four .title {
