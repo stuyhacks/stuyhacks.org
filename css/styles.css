@@ -438,8 +438,7 @@ body > section  > h1 {
 
 .four-by-four > div {
     display: flex;
-    flex-direction: column;
-    flex-basis: 40%;
+    
 }
 
 .four-by-four > div > div {
