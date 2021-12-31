@@ -486,7 +486,6 @@ body > section.footer {
     font-family: Helvetica Neue, Helvetica;
     background-color: #000;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
