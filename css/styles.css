@@ -434,6 +434,7 @@ body > section  > h1 {
     width: 800px;
     justify-content: space-between;
     color:black;
+    flex-direction: column;
 }
 
 .four-by-four > div {
