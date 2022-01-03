@@ -211,7 +211,7 @@ body > section.hero {
     height: 510px;
     padding-top: 18px;
     position: relative;
-    transform: rotate(-18deg);
+    transform: rotate(320deg);
 }
 
 @media (max-width: 768px) {
