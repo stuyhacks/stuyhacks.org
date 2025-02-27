@@ -397,13 +397,27 @@ body>section>h1 {
     padding: 0 auto;
 }
 
+#hack,
 .four-by-four {
-    display: flex;
+    color: black;
     margin: 0 auto;
-    width: 800px;
-    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
     color: black;
 }
+
+#hack {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.four-by-four {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+}
+
+
 
 .four-by-four>div {
     display: flex;
@@ -411,13 +425,15 @@ body>section>h1 {
     flex-basis: 40%;
 }
 
-.four-by-four>div>div {
+.four-by-four>div>div,
+#hack div {
     margin-bottom: 2.5em;
     flex-direction: column;
     flex-basis: 40%;
 }
 
-.four-by-four .title {
+.four-by-four .title,
+#hack .title {
     font-family: Circular Std;
     font-weight: 500;
     margin-bottom: 20px;
@@ -425,10 +441,14 @@ body>section>h1 {
     color: black;
 }
 
-@media (max-width: 868px) {
-    .four-by-four {
-        width: 90%;
-    }
+.four-by-four .description,
+#hack .description {
+    font-family: Circular Std;
+    font-weight: 300;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 2em;
+    color: black;
 }
 
 @media (max-width: 620px) {
@@ -437,20 +457,16 @@ body>section>h1 {
         color: black;
     }
 
+
     .four-by-four {
         flex-direction: column;
-        width: 80%;
+    }
+
+    #hack {
+        text-align: left;
     }
 }
 
-.four-by-four .description {
-    font-family: Circular Std;
-    font-weight: 300;
-    font-size: 1.15rem;
-    line-height: 1.5;
-    margin-bottom: 2em;
-    color: black;
-}
 
 body>section.footer {
     color: #fff;
