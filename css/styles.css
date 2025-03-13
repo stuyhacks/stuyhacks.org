@@ -127,7 +127,7 @@ body>section.hero {
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
     font-weight: bold;
-    color: #eb50d9;
+    color: #00beae;
     text-align: center;
 }
 
@@ -188,7 +188,7 @@ body>section.hero {
 @media (max-width: 768px) {
     .hero-head {
         font-size: 15vw;
-        -webkit-text-stroke: 3px #404da8;
+        -webkit-text-stroke: 3px #1527b3;
     }
 
     .nav-item {
@@ -209,7 +209,7 @@ body>section.hero {
 
     .hero-head {
         font-size: 90px;
-        -webkit-text-stroke: 3.5px #404da8
+        -webkit-text-stroke: 3.5px #1e30bd
     }
 
     #snake-logo>img {
@@ -227,7 +227,7 @@ body>section.hero {
     font-family: Helvetica Neue, Helvetica;
     font-size: 18px;
     margin: 0 auto;
-    border-bottom: 3px solid #eb50d9;
+    border-bottom: 3px solid #00beae;
     font-weight: bold;
     padding-bottom: 15px;
 }
@@ -238,7 +238,7 @@ body>section.hero {
     width: 87%;
     position: absolute;
     bottom: 30px;
-    color: #eb50d9;
+    color: #00beae;
 }
 
 @media (max-width: 500px) {
@@ -332,7 +332,7 @@ body>section.about {
 
 body>section.join-us {
     color: #fff;
-    background-color: #eb50d9;
+    background-color: #00beae;
     height: 115vh;
 }
 
@@ -510,7 +510,7 @@ body>section.footer {
 }
 
 #footer-register-btn:hover {
-    background-color: #d938be;
+    background-color: #00beae;
     cursor: pointer;
 }
 
@@ -552,7 +552,7 @@ body>section.footer {
 }
 
 #color-learn {
-    background-color: #ff63ef;
+    background-color: #0db899;
 }
 
 #color-logistics {
@@ -637,7 +637,7 @@ body>section.footer {
 }
 
 body>section.faq {
-    background: #172031;
+    background: #11139b;
     color: #fff;
     display: flex;
     align-items: center;
@@ -650,7 +650,7 @@ body>section.faq {
 }
 
 body>section.schedule {
-    background: #800073;
+    background: #079387;
     color: #fff;
     display: flex;
     align-items: center;
@@ -680,7 +680,7 @@ body>section.schedule {
 .twin-towers>.row>div {
     margin-bottom: 30px;
     padding: 40px 30px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #f8fffd;
 }
 
 .footer {
@@ -699,15 +699,14 @@ body>section.schedule {
 }
 
 body>section.sponsors {
-    background: rgb(226, 225, 235);
+    background: f8fffd;
     color: #172031;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: auto;
     font-family: Circular Std;
     font-size: 1.15rem;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .sponsors>div {
@@ -715,7 +714,7 @@ body>section.sponsors {
 }
 
 .sponsors h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -732,7 +731,7 @@ body>section.sponsors {
 
 .sponsors>div>div>a {
     display: block;
-    margin: 10px 20px;
+    margin: 10px 10px;
 }
 
 .sponsors>div#platinum>div>a>img {
